@@ -1,0 +1,39 @@
+.navigationBar {
+  position: fixed;
+  top: 0; /*Keeps the navigation bar at the top of the screen even when scrolling */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  height: 30px;
+  z-index: 1;
+  /*Cause the animation of a smooth fade when scrolling down from the top */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.logo {
+  position: fixed;
+  left: 9px;
+  width: 80px;
+  object-fit: contain;
+}
+.navigationAvatar {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  object-fit: contain;
+}
+
+.logo:hover {
+  transform: scale(1, 1.31);
+  transition: all 0.2s;
+}
+.navigationAvatar:hover {
+  transform: scale(1, 1.09);
+  transition: all 0.2s;
+}
+
+.navigationColor {
+  background-color: rgba(17, 17, 17, 0.616);
+}
